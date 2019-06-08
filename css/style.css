@@ -1,0 +1,52 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.gallery{
+    width: 860px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+.gallery .photos{
+    position: relative;
+    height: 520px;
+}
+.gallery .photos img{
+    width: 100%;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition:  2s;
+    -moz-transition:  2s;
+    -ms-transition:  2s;
+    -o-transition:  2s;
+    transition:  2s;
+}
+.gallery .photos img.showed{
+    opacity: 1;
+}
+
+.prev{
+    left: 5%;
+}
+.next{
+    right: 5%;
+}
+
+.next, .prev{
+    opacity: 0;
+    transition: 3s;
+    font-size: 40px;
+    color: #fff;
+    background: transparent;
+    border: 0;
+    position: absolute;
+    top: 42%;
+    cursor: pointer;
+}
+.show{
+    opacity: 1;
+    transition: 2s;
+}
